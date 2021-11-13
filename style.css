@@ -1,0 +1,49 @@
+h2{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+button{
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: dotted red;
+    background-color: #000;
+    color: #fff;
+}
+.modal .close {
+    text-align: center;
+}
+
+.backdrop{
+background-color: rgba(236, 14, 14, 0.07);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: none;
+z-index: inherit;
+}
+
+.modal{
+    z-index: 10;
+    width: 20rem;
+    height: 200px;
+    padding: 5rem;
+    background-color: rgb(235, 213, 19);
+    border: 1px solid #ccc;
+    box-shadow: 0 20px 50px rgb(0, 0, 0, 0.6);
+    border-radius: 5px;
+   opacity: 0;
+transition: all 0.5s ease-in-out;
+transform: translateY(-100vh)
+}
+
+body{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 255, 136);
+}
